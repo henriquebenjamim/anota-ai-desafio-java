@@ -1,6 +1,7 @@
 package com.henriquebenjamim.anotaaidesafio.domain.product;
 
 import com.henriquebenjamim.anotaaidesafio.domain.category.Category;
+import com.henriquebenjamim.anotaaidesafio.domain.category.CategoryDTO;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -20,4 +21,11 @@ public class Product {
     private String ownerId;
     private Integer price;
     private Category category;
+
+    public Product(ProductDTO productDTO) {
+        this.title = productDTO.title();
+        this.description = productDTO.description();
+        this.ownerId = productDTO.ownerId();
+        this.price = productDTO.price();
+    }
 }
