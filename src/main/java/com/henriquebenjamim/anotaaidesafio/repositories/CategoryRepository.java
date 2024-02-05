@@ -1,6 +1,6 @@
-package com.henriquebenjamim.anotaaidesafio.config.mongo.repositories;
+package com.henriquebenjamim.anotaaidesafio.repositories;
 
-import com.henriquebenjamim.anotaaidesafio.config.mongo.domain.category.Category;
+import com.henriquebenjamim.anotaaidesafio.domain.category.Category;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

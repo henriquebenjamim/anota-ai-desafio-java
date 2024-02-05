@@ -1,6 +1,6 @@
-package com.henriquebenjamim.anotaaidesafio.config.mongo.domain.product;
+package com.henriquebenjamim.anotaaidesafio.domain.product;
 
-import com.henriquebenjamim.anotaaidesafio.config.mongo.domain.category.Category;
+import com.henriquebenjamim.anotaaidesafio.domain.category.Category;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

@@ -1,4 +1,4 @@
-package com.henriquebenjamim.anotaaidesafio.config.mongo.domain.category;
+package com.henriquebenjamim.anotaaidesafio.domain.category;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,4 +17,10 @@ public class Category {
     private String title;
     private String description;
     private String ownerId;
+
+    public Category(CategoryDTO categoryDTO) {
+        this.title = categoryDTO.title();
+        this.description = categoryDTO.description();
+        this.ownerId = categoryDTO.ownerId();
+    }
 }
